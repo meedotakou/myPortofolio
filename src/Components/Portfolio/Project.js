@@ -8,12 +8,12 @@ export const Project = ({project}) => {
     'Next Js',
     'Tailwind ',
     'Prisma',
-    'Clerk',
-    'Angular',
+    'React',
+    'MongoDB',
     'BootStrap',
     'Spring Boot',
-    'MongoDB',
-    'MySQL'
+    'Angular',
+    'MySQL',
   ]
 
   const {UrlCode,UrlView,ImageUrl,TechnologyUser}=project;
@@ -27,8 +27,7 @@ export const Project = ({project}) => {
             </ul>
             <div className='TechnologyUsed'>
               {TechnologyUser.map((item,index)=>{
-
-                return <span>{technology[index]}</span>
+                return <span>{technology[item]}</span>
               })}
             </div>
         </div>
